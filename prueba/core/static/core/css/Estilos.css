@@ -1,0 +1,15 @@
+body{
+
+    background-color:yellow;
+}
+
+p{
+    
+    margin: auto;
+    width: 70%;
+    border: 8px solid greenyellow;
+    padding: 10px;
+}
+
+
+ 
