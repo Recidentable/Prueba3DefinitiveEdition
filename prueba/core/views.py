@@ -8,16 +8,36 @@ def Jardineria(request):
     return render(request, 'core/Jardineria.html')
 
 def Fertilizantes(request):
-    return render(request, 'core/Fertilizantes.html')
+    producto = Producto.objects.all()
+    datos = {
+        'productos': producto
+    }
+    return render(request, 'core/Fertilizantes.html',datos)
 
 def Maceteros(request):
-    return render(request, 'core/Maceteros.html')
+    producto = Producto.objects.all()
+    datos = {
+        'productos': producto
+    }
+    return render(request, 'core/Maceteros.html',datos)
 
 def Flores(request):
-    return render(request, 'core/Flores.html')
+    producto = Producto.objects.all()
+    datos = {
+        'productos': producto
+    }
+    return render(request, 'core/Flores.html',datos)
 
 def registro_usuario(request):
     return render(request, 'core/registro_usuario.html')
+
+def Tienda(request):
+    producto = Producto.objects.all()
+    datos = {
+        'productos': producto
+    }
+    return render(request, 'core/Tienda.html',datos)
+    
 
 def home(request):
     producto = Producto.objects.all()
